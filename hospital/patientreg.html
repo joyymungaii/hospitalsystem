@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="content.css" />
+    <title>Patient Info</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <img src="/images/logo6.jpeg" alt="" />
+      <ul style="padding-top: 25px">
+        <li>
+          <a href="" style="color: black; size: xx-larger">
+            Care Embrace Medical
+          </a>
+        </li>
+        <li><a href="">Home</a></li>
+        <li><a href="/staffreg.html"> StaffReg</a></li>
+        <li><a href="/patientreg.html">PatientReg</a></li>
+        <li>
+          <a href="">
+            <select name="" id="">
+              <option value="more">More</option>
+              <option value="to">Contact Us</option>
+              <option value="me">About Us</option>
+            </select>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="signup">
+        <li>
+          <a href="/signup.html"><i class="bx bx-user"></i>Sign Up</a>
+        </li>
+        <li>
+          <a href="/login.html"><i class="bx bx-log-in"></i></a> Login
+        </li>
+      </ul>
+    </nav>
+    <br />
+    <form action="/action_page.php" class="patient">
+      <h2>PATIENT REGISTRATION</h2>
+      <label for="fname">Fistname</label>
+      <input type="text" id="fname" name="fname" />
+
+      <label for="dob">DOB</label>
+      <input type="text" /><br /><br />
+
+      <label for="lname">Lastname</label>
+      <input type="text" id="lname" name="lname" />
+
+      <label for="gender">Gender</label>
+      <input type="radio" id="female" name="female" value="female" />
+      <label for="female">female</label>
+      <input type="radio" id="male" name="male" value="male" />
+      <label for="male">male</label><br /><br />
+
+      <label for="email">Email</label>
+      <input type="email" placeholder="joy@gmail.com" required />
+
+      <label for="county">County</label>
+      <input type="combobox" /><br /><br />
+
+      <label for="telephone">Telephone</label>
+      <input type="text" /><br /><br />
+
+      <button type="save">save</button><br /><br />
+      <button type="exit">exit</button>
+    </form>
+  </body>
+</html>

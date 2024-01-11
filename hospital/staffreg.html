@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="content.css">
-    <title>Sign Up</title>
+    <title>StaffReg</title>
 </head>
 <body>
     <nav class="navbar">
@@ -28,28 +28,30 @@
             <li><a href="/signup.html"><i class='bx bx-user'></i>Sign Up</a> </li>
             <li> <a href="/login.html"><i class='bx bx-log-in'></i></a> Login</li>
         </ul>
-    </nav>
-        <form action="/action_page.php">
-            <h2>SIGN UP</h2>
-            <label for="username">username</label><br>
-            <input type="text" id="username" name="username" required><br><br>
+    </nav><br>
+        <form action="/action_page.php" class="staff">
+            <h2>STAFF REGISTRATION</h2>
+            <label for="fname">Fistname</label>
+            <input type="text" id="fname" name="fname">
+
+            <label for="password">Password</label>
+            <input type="password" required><br><br>
     
-            <label for="email">email</label>
-            <input type="email" placeholder="joy@gmail.com" required><br><br>
+            <label for="lname">Lastname</label>
+            <input type="text" id="lname" name="lname">
+
+            <label for="specialty">Specialty</label>
+            <input type="combobox"><br><br><br>
     
-            <label for="new password"> new password</label><br>
-            <input type="text" id="new password" name="new password" required><br><br>
+            <label for="email">Email</label>
+            <input type="email" placeholder="joy@gmail.com" required>
     
-            <label for="gender">gender</label>
-            <input type="radio" id="female" name="female" value="female">
-            <label for="female">female</label>
-            <input type="radio" id="male" name="male" value="male">
-            <label for="male">male</label><br><br>
+            <label for="username">Username</label>
+            <input type="text">
+            <input type="checkbox">use email<br><br>
     
-            <label for="specialty">specialty</label><br>
-            <input type="specialty" id="specialty" name="specialty" required><br><br>
-    
-            <button type="sign up">sign up</button>
+            <button type="save">save</button><br><br>
+            <button type="exit">exit</button>
         </form>
     
 </body>
