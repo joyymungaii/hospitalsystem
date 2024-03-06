@@ -44,7 +44,7 @@ body{
     width: 0;
     height: 2px;
     background-color: black;
-    transition: 1s;
+    transition: 2s;
 }
 .navbar a:hover::before{
     width: 100%;
