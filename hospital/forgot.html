@@ -31,8 +31,8 @@ body{
 }
 
 .box{
-    width: 450px;
-    height: 500px;
+    width: 550px;
+    height: 300px;
     border: 2px solid hwb(143 15% 69%);
     display: flex;
     justify-content: center;
@@ -44,7 +44,7 @@ body{
 
 h2{
     font-size: 2em;
-    color: #fff;
+    color: #faf5e3;
     text-align: center;
 }
 
@@ -52,7 +52,7 @@ h2{
     position: relative;
     margin: 30px 0;
     width: 300px;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #faf5e3;
 }
 
 .inputbox label{
@@ -60,7 +60,7 @@ h2{
     top: 50%;
     left: 40px;
     transform: translate(-50%);
-    color: #fff;
+    color: #faf5e3;
     font-size: 1em;
     pointer-events: none;
     transition: 0.5s;
@@ -84,7 +84,7 @@ input:focus~label{
 .inputbox ion-icon{
     position: absolute;
     right: 8px;
-    color: #fff;
+    color: #faf5e3;
     font-size: 1.2em;
     top: 20px;
 }
@@ -92,7 +92,7 @@ input:focus~label{
 button{
     width: 100%;
     height: 40px;
-    background-color: #e6e2e2;
+    background-color: #faf5e3;
     border-radius: 40px;
     border: none;
     outline: none;
@@ -101,35 +101,6 @@ button{
     font-weight: 700;
 }
 
-.forget{
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 0 15px;
-    font-size: 0.9em;
-    color: #fff;
-}
-
-.forget label:nth-child(2){
-    order: 1;
-}
-
-.forget label{
-    display: flex;
-    align-items: center;
-}
-
-.forget label input[ type="checkbox"]{
-    margin-right: 6px;
-}
-
-.forget label a{
-    color: #fff;
-    text-decoration: none;
-}
-
-.forget  label a:hover{
-    text-decoration: underline;
-}
 
 .register{
     font-size: 0.9em;
@@ -155,38 +126,22 @@ button{
     <div class="box">
 
         <form action="">
-            <h2>Login</h2>
+            <h2>Forgot Password</h2>
 
             <div class="inputbox">
                 <ion-icon name="mail-outline" ></ion-icon>
-                <input type="email" name="" id="" required>
+                <input  type="email" name="" id="" required>
                 <label for="">Email:</label>
             </div>
 
             <div class="inputbox">
                 <ion-icon name="lock-closed-outline" ></ion-icon>
-                <input type="password" name="" id="" required>
+                <input  type="password" name="" id="" required>
                 <label for="">Password:</label>
             </div>
 
-            <div class="forget">
+            <button> OK </button>
 
-                <label for="">
-                    <input type="checkbox" name="" id="">Remember me
-                </label for="register">
-                    
-                <label for="">
-                    Forget Password
-                </label>
-            </div>
-
-            <button> Log In </button>
-
-            <div class="register">
-                <p>Don't have an account?
-                    <a href="">register</a>
-                </p>
-            </div>
         </form>
 
     </div>
