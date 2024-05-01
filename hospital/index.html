@@ -19,8 +19,7 @@
 
       body{
           height: 100vh;
-          background-color: #000;
-          background-image: url(/images/background3.jpg);
+          background-color: #cad;
           background-size: cover;
           background-position: center;
       }
@@ -125,20 +124,6 @@
           justify-content: center;
       }
 
-      section#hero{
-          height: calc(100vh - 60px);
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          text-align: center;
-          color: #fff;
-      }
-
-      #hero h1{
-          font-size: 3rem;
-          margin-top: 1rem;
-      }
 
       /*RESPONSIVE DESIGN*/ 
       @media (max-width: 992px){
@@ -161,6 +146,29 @@
               left: 2rem;
               width: unset;
           }
+      }
+      .content h3{
+        font-size: 40px;
+        font-weight: 100;
+        margin-top: 90px;
+        margin-bottom: 15px;
+        margin-left: 50px;
+        color: #fff;
+      }
+      .content p{
+        font-size: 10px;
+        color: #fff;
+        margin-left: 50px;
+
+      }
+      .feature-img{
+        height: 85%;
+        position: absolute;
+        bottom: 0;
+        right: 90px;
+        border-radius: 5px;
+        
+        w
       }
       .row{
         gap: 10px;
@@ -202,21 +210,14 @@
         <li><a href="/hospital/form.html" class="action_btn">Get Started</a></li>         
       </div>
     </header>
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm ">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-        </div>
-
-        <div class="col-sm">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        </div>
-
-        <div class="col-sm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        </div>
+    <div>
+    <div class="content">
+          <h3>Best Medical & <br> Healthcare Services</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, culpa</p>
     </div>
-</div>
+    
+    <img src="/images/d6.jpg" class="feature-img" alt="">
+    </div>
     <script>
       const toggleBtn = document.querySelector('.toggle_btn');
       const toggleBtnIcon = document.querySelector('.toggle_btn i');
