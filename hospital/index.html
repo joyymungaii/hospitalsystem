@@ -19,23 +19,23 @@
 
       body{
           height: 100vh;
-          background-color: #cad;
           background-size: cover;
           background-position: center;
       }
-
+      /* NAVBAR */
       li{
           list-style: none;
+          margin-top: 18px;
       }
 
       a{
           text-decoration: none;
-          color: #fff;
+          color: #000;
           font-size: 1rem;
       }
 
       a:hover{
-          color: orangered;
+          color: #000;
       }
 
       header{
@@ -63,17 +63,10 @@
           gap: 2rem;
       }
 
-      .navbar .toggle_btn{
-          
-          color: #fff;
-          font-size: 1.5rem;
-          cursor: pointer;
-          
-      }
-
+      /*GET STARTED BTN*/
       .action_btn{
-          background-color: orange;
-          color: #fff;
+          background-color: #93a267;
+          color: #000;
           padding: 0.5rem 1rem;
           border: none;
           outline: none;
@@ -86,13 +79,19 @@
 
       .action_btn:hover{
           scale: 1.07;
-          color: #fff;
+          color: #000;
       }
 
       .action_btn:active{
           scale: 0.95;
       }
 
+      .navbar .toggle_btn{
+          
+          color: #000;
+          font-size: 1.5rem;
+          cursor: pointer;  
+      }
       .dropdown_menu{
           
           position: absolute;
@@ -147,37 +146,50 @@
               width: unset;
           }
       }
-      .content h3{
-        font-size: 40px;
-        font-weight: 100;
-        margin-top: 90px;
-        margin-bottom: 15px;
-        margin-left: 50px;
-        color: #fff;
-      }
-      .content p{
-        font-size: 10px;
-        color: #fff;
-        margin-left: 50px;
 
+      #hero-image {
+        height: 500px;
+        padding-top: 1px;
+        background: #e8eced url('/') no-repeat center;
       }
-      .feature-img{
-        height: 85%;
-        position: absolute;
-        bottom: 0;
-        right: 90px;
-        border-radius: 5px;
+      #hero-image h1{
+        margin: 180px 0 5px 70px;
       }
-
-      .row{
-        gap: 10px;
+      #hero-image p{
+        font-size: 15px;
+        margin-left: 70px;
       }
-
+      .button-1 {
+          margin-left: 70px;
+          display: block;
+          text-align: center;
+          background: #444;
+          border-radius: 20px;
+          color: #fff;
+          width: 140px;
+          height: 40px;
+          font-size: 20px;
+          line-height: 40px;
+          
+      }
+      .button-1:hover {
+          background-color: #02b8dd;
+          color: #fff;
+      }
+      .container-fluid{
+        height: 200px;
+        padding-top: 1px;
+        background: #93a267 url('/') no-repeat center;
+      }
       .col-sm{
-        background-color: #fff;
-        margin-top: 10px;
-        border-radius: 5px;
+        display: flex;
+        border: 1px solid black;
+        margin: 20px;
       }
+
+
+
+
     </style>
   </head>
   <body>
@@ -209,14 +221,33 @@
         <li><a href="/hospital/form.html" class="action_btn">Get Started</a></li>         
       </div>
     </header>
-    <div>
-    <div class="content">
-          <h3>Best Medical & <br> Healthcare Services</h3>
+
+    <div id="hero-image">
+      <div class="wrapper">
+          <h1><strong>The Best Medical &<br/>
+          Healthcare Service.</strong></h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, culpa</p>
+          <a href="#" class="button-1">Get Started</a>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm ">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+        </div>
+
+        <div class="col-sm">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        </div>
+
+        <div class="col-sm">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        </div>
+      </div>
     </div>
     
-    <img src="/images/d6.jpg" class="feature-img" alt="">
-    </div>
+
     <script>
       const toggleBtn = document.querySelector('.toggle_btn');
       const toggleBtnIcon = document.querySelector('.toggle_btn i');
