@@ -174,9 +174,71 @@
       .three{
         height: 120vh;
         background-color: #93a267;
-        display: flex;
       }
-
+      .three h2{
+        font-size: 50px;
+        text-align: center;
+        padding-top: 30px;
+      }
+      .services{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .service{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        width: 300px;
+        margin: 50px 0 0 30px;
+        background-color: #fff;
+        border-radius: 20px;
+      }
+      .service i{
+        font-size: 40px;
+        padding-bottom: 20px;
+      }
+      .service h3{
+        font-size: 30px;
+        padding-top: 20px;
+      }
+      .service p{
+        font-size: 18px;
+        padding-bottom: 20px;
+      }
+      .service a{
+        font-size: 18px;
+      }
+      .service a i{
+        font-size: 15px;
+      }
+      .buttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        gap: 20px;
+      }
+      .appointment_btn{
+        width: 200px;
+        height: 60px;
+        background-color: #757575;
+        color: #000;
+        border: none;
+        border-radius: 30px;
+        font-size: 18px;
+      }
+      .more_services_btn{
+        width: 200px;
+        height: 60px;
+        background-color: #fff;
+        color: #000;
+        border: none;
+        border-radius: 30px;
+        font-size: 18px;
+      }
     </style>
   </head>
   <body>
@@ -239,51 +301,56 @@
       </div>
     </section>
     <section class="three">
-      <div >
-        <div class="services">
+      <h2>Healthcare Services</h2>
+      <div class="services">
+        <div class="service">
           <i class="fa-solid fa-tooth"></i>
           <h3>Dental Care</h3>
-          <p>Lorem ipsum dolor sit amet consectetur
-            <br> adipisicing elit. Atque, odit.</p>
+          <p>Lorem ipsum dolor sit amet consecte
+             adipisicing elit Atque, odit.</p>
             <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
         </div>
-        <div class="services">
+        <div class="service">
           <i class="fa-solid fa-eye"></i>
           <h3>Eye Care</h3>
-          <p>Lorem ipsum dolor sit amet consectetur
-            <br> adipisicing elit. Eligendi, nihil.</p>
+          <p>Lorem ipsum dolor sit amet consecte
+            adipisicing elit. Eligendi, nihil.</p>
             <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
         </div>
-        <div class="services">
+        <div class="service">
           <i class="fa-solid fa-stethoscope"></i>
           <h3>General</h3>
-          <p>Lorem ipsum dolor sit amet consectetur
-            <br> adipisicing elit. Eligendi, nihil.</p>
+          <p>Lorem ipsum dolor sit amet consecte
+            adipisicing elit. Eligendi, nihil.</p>
             <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="services">
-        <div>
+        <div class="service">
           <i class="fa-solid fa-apple-whole"></i>
           <h3>Nutrition</h3>
-          <p>Lorem ipsum dolor sit amet consectetur
-            <br> adipisicing elit. Eligendi, nihil.</p>
+          <p>Lorem ipsum dolor sit amet consecte
+            adipisicing elit. Eligendi, nihil.</p>
             <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
         </div>
-        <div class="services">
+        <div class="service">
           <i class="fa-solid fa-syringe"></i>
           <h3>Vaccination</h3>
-          <p>Lorem ipsum dolor sit amet consectetur
-            <br> adipisicing elit. Eligendi, nihil.</p>
+          <p>Lorem ipsum dolor sit amet consecte
+            adipisicing elit. Eligendi, nihil.</p>
             <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
         </div>
-        <div class="services">
+        <div class="service">
           <i class="fa-solid fa-baby-carriage"></i>
           <h3>Pediatrics</h3>
-          <p>Lorem ipsum dolor sit amet consectetur
-            <br> adipisicing elit. Eligendi, nihil.</p>
+          <p>Lorem ipsum dolor sit amet consecte
+            adipisicing elit. Eligendi, nihil.</p>
             <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
         </div>
+      </div>
+      <div class="buttons">
+        <button class="appointment_btn">Make Appointment</button>
+        <button class="more_services_btn">More Services</button>
       </div>
     </section>
   </body>
