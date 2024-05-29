@@ -241,14 +241,19 @@
         font-size: 18px;
       }
       .four{
-        height: 80vh;
+        height: 90vh;
         display: flex;
         flex-direction: column;
-    
-        gap: 20px;
+      }
+      .four h5{
+        font-size: 12px;
+        color: darkolivegreen;
+        text-transform: uppercase;
+        padding: 30px 0 5px 80px;
       }
       .four h2{
         font-size: 40px;
+        padding: 0 0 40px 80px;
       }
       .blogs{
         display: flex;
@@ -263,11 +268,17 @@
         background-repeat: no-repeat;
         border-radius: 10px 0 0 0;
       }
+      .blogs span{
+        font-size: 12px;
+        font-weight: lighter;
+        text-align: right;
+      }
       .blogs h4{
         font-size: 18px;
       }
       .blogs p{
         font-size: 14px;
+
       }
       .blogs a{
         color: #757575;
@@ -282,6 +293,15 @@
         height: 350px;
         background-color: #93a267;
         border-radius: 10px 0 10px 0;
+      }
+      .words{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      footer{
+        height: 50vh;
+        background-color: #757575;
       }
     </style>
   </head>
@@ -398,11 +418,13 @@
       </div>
     </section>
     <section class="four">
+      <h5>news & blogs</h5>
       <h2>Blogs and Articles</h2>
       <div class="blogs">
         <div class="article">
           <img src="/images/d8.png" alt="">
-          <div>
+          <div class="words">
+            <span> - 29th May 2024</span>
             <h4>Lorem ipsum dolor sit.</h4>
             <p>Lorem ipsum dolor sit amet <br>consectetur adipisicing elit.</p>
             <a href="">Read more <i class="fa-solid fa-arrow-right"></i></a>
@@ -410,7 +432,8 @@
         </div>
         <div class="article">
           <img src="/images/d7.png" alt="">
-          <div>
+          <div class="words">
+            <span> - 29th May 2024</span>
             <h4>Lorem ipsum dolor sit.</h4>
             <p>Lorem ipsum dolor sit amet <br>consectetur adipisicing elit.</p>
             <a href="">Read more <i class="fa-solid fa-arrow-right"></i></a>
@@ -418,7 +441,8 @@
         </div>
         <div class="article">
           <img src="/images/d8.png" alt="">
-          <div>
+          <div class="words">
+            <span> - 29th May 2024</span>
             <h4>Lorem ipsum dolor sit.</h4>
             <p>Lorem ipsum dolor sit amet <br>consectetur adipisicing elit.</p>
             <a href="">Read more <i class="fa-solid fa-arrow-right"></i></a>
@@ -426,5 +450,8 @@
         </div>
       </div>
     </section>
+    <footer>
+
+    </footer>
   </body>
 </html>
