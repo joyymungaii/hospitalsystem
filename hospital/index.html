@@ -26,10 +26,10 @@
       .navbar {
         display: flex;
         align-items: center;
-        gap: 150px;
+        gap: 200px;
         width: 100vw;
         height: 80px;
-        background-color: grey;
+        background-color: #027179;
       }
 
       /*logo*/
@@ -43,7 +43,6 @@
 
       li {
         list-style: none;
-        margin-top: 20px;
       }
 
       a {
@@ -53,7 +52,7 @@
 
       .links {
         display: flex;
-        gap: 2rem;
+        gap: 50px;
         color: #000;
       }
       
@@ -63,12 +62,15 @@
       }
       /*GET STARTED BTN*/ 
       .action_btn {
-        background-color: #93a267;
+        background-color: #00f2e1;
         color: #000;
-        padding: 0.5rem 1rem;
+        width: 100px;
+        height: 35px;
+        padding: 9px;
+        margin-left: 200px;
         border: none;
         border-radius: 20px;
-        font-size: 0.8rem;
+        font-size: 14px;
         font-weight: bold;
         cursor: pointer;
         transition: scale 0.2 ease;
@@ -78,19 +80,12 @@
         scale: 1.07;
       }
 
-      /*three lines button*/
-      .toggle_btn {
-        color: #000;
-        font-size: 1.5rem;
-        cursor: pointer;
-        margin-right: 15px;
-      }
       .banner {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-image: url(/images/doc.jpg);
+        background-image: url(/images/d5.jpg);
         height: 88vh;
         background-size: cover;
         background-position: top;
@@ -115,17 +110,20 @@
       .banner button {
         width: 150px;
         height: 40px;
-        background-color: #93a267;
-        color: #fff;
+        background-color: #00f2e1;
+        color: #000;
         font-weight: bold;
         font-size: 18px;
         border: none;
         border-radius: 40px;
+        transition: transform 0.1s;
       }
-
+      .banner button:hover{
+        transform: scale(1.1);
+      }
       .two{
         height: 45vh;
-        background-color: #FBF7F3;
+        background-color: #006270;
       }
       .motto{
         display: flex;
@@ -134,11 +132,11 @@
         justify-content: center;
       }
       .motto i{
-        color: #93a267;
+        color: #00B2AD;
         font-size: 40px;
         margin-top: 15px;
         margin-left: 120px;
-        background-color: #757575;
+        background-color: #009394;
         border-radius: 50px;
         width: 60px;
         height: 50px;
@@ -152,6 +150,11 @@
         width: 310px;
         margin-top: 40px;
         background-color: #fff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.164), 0 6px 20px 0 rgba(0, 0, 0, 0.062);
+        transition: transform 0.1s;
+      }
+      .tiny_motto:hover{
+        transform: scale(1.05);
       }
       .tiny_motto h3{
         text-align: center;
@@ -164,7 +167,7 @@
       .tiny_motto button{
         margin-top: 10px;
         margin-left: 75px;
-        background-color: #93a267;
+        background-color: #009394;
         color: #fff;
         font-size: 16px;
         border: none;
@@ -173,8 +176,8 @@
         height: 35px;
       }
       .three{
-        height: 160vh;
-        background-color: #93a267;
+        height: 140vh;
+        background-color: #00B2AD;
       }
       .three h2{
         font-size: 50px;
@@ -196,6 +199,10 @@
         margin: 50px 0 0 30px;
         background-color: #fff;
         border-radius: 20px;
+        transition: transform 500ms;
+      }
+      .service:hover{
+        transform: scale(1.1);
       }
       .service i{
         font-size: 40px;
@@ -226,11 +233,15 @@
       .appointment_btn{
         width: 200px;
         height: 60px;
-        background-color: #757575;
+        background-color: #009394;
         color: #000;
         border: none;
         border-radius: 30px;
         font-size: 18px;
+        transition: transform 0.1s;
+      }
+      .appointment_btn:hover{
+        transform: scale(1.1);
       }
       .more_services_btn{
         width: 200px;
@@ -240,15 +251,20 @@
         border: none;
         border-radius: 30px;
         font-size: 18px;
+        transition: transform 0.1s;
+      }
+      .more_services_btn:hover{
+        transform: scale(1.1);
       }
       .four{
+        background-color: #006270;
         height: 90vh;
         display: flex;
         flex-direction: column;
       }
       .four h5{
         font-size: 12px;
-        color: darkolivegreen;
+        color: #00B2AD;
         text-transform: uppercase;
         padding: 30px 0 5px 80px;
       }
@@ -282,7 +298,7 @@
 
       }
       .blogs a{
-        color: #757575;
+        color: #00B2AD;
         text-align: center;
       }
       .article{
@@ -292,7 +308,7 @@
         gap: 20px;
         width: 310px;
         height: 350px;
-        background-color: #93a267;
+        background-color: #009394;
         border-radius: 10px 0 10px 0;
       }
       .words{
@@ -302,7 +318,7 @@
       }
       footer{
         height: 70vh;
-        background-color: #757575;
+        background-color: #0b8da1;
       }
       .newsletter{
         height: 35vh;
@@ -330,6 +346,7 @@
         width: 90px;
         border: none;
         border-radius: 30px;
+        background-color: #006270;
       }
       .about_us {
         display: flex;
@@ -417,11 +434,6 @@
           </ul>
   
           <a href="/hospital/form.html" class="action_btn">Get Started</a>
-  
-          <div class="toggle_btn">
-            <i class="fa-solid fa-bars"></i>
-          </div>
-        </div>
         </div>
       </header>
       <div class="banner">
