@@ -4,84 +4,296 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="content.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <title>Patient Info</title>
-  </head>
-  <body class="d">
-    <nav class="navbar">
-      <img src="/images/logo6.jpeg" alt="" />
-      <ul style="padding-top: 25px">
-        <li>
-          <a href="" style="color: black; size: xx-larger">
-            Care Embrace Medical
-          </a>
-        </li>
-        <li><a href="/hospital/index.html">Home</a></li>
-        <li><a href="/hospital/staffreg.html"> StaffReg</a></li>
-        <li><a href="/hospital/patientreg.html">PatientReg</a></li>
-        <li>
-          <a href="">
-            <select name="" id="">
-              <option value="more">More</option>
-              <option value="to">Contact Us</option>
-              <option value="me">About Us</option>
-            </select>
-          </a>
-        </li>
-      </ul>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Open Sans", sans-serif;
+      }
 
-      <ul class="signup">
-        <li>
-          <a href="/hospital/signup.html"><i class="bx bx-user"></i>Sign Up</a>
-        </li>
-        <li>
-          <a href="/hospital/login.html"><i class="bx bx-log-in"></i></a> Login
-        </li>
-      </ul>
-    </nav>
-    <br />
-    <form action="/action_page.php" class="patient">
-      <h2>PATIENT REGISTRATION</h2>
-      <div class="row">
-        <div class="col-lg-6">
-          <label for="fname">Fistname</label>
-          <input type="text" id="fname" name="fname" />
+      body {
+        width: 100vw;
+      }
+
+      .one {
+        height: 100vh;
+      }
+
+      /*whole header*/
+      .navbar {
+        display: flex;
+        align-items: center;
+        gap: 200px;
+        width: 100vw;
+        height: 80px;
+        background-color: #027179;
+      }
+
+      /*logo*/
+      .logo {
+        margin-left: 20px;
+        color: #000;
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: -0.08em;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+
+      .links {
+        display: flex;
+        gap: 50px;
+        color: #000;
+      }
+
+      .links a:hover {
+        color: #000;
+        text-decoration: underline;
+      }
+      /*GET STARTED BTN*/
+      .action_btn {
+        background-color: #00f2e1;
+        color: #000;
+        width: 100px;
+        height: 35px;
+        padding: 9px;
+        margin-left: 200px;
+        border: none;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: scale 0.2 ease;
+      }
+
+      .action_btn:hover {
+        scale: 1.07;
+      }
+
+      .banner {
+        height: 88vh;
+        background-image: url(/images/d5.jpg);
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+      }
+
+      .banner h2 {
+        font-size: 30px;
+      }
+      label, select {
+        font-size: 20px;
+      }
+      input {
+        font-size: 25px;
+        border-radius: 5px;
+      }
+      ::placeholder {
+        font-size: 20px;
+      }
+      button {
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 10px;
+        padding: 5px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="one">
+      <header>
+        <div class="navbar">
+          <div class="logo">
+            <a href="/hospital/index.html">Care Embrace Medical</a>
+          </div>
+
+          <ul class="links">
+            <li><a href="/hospital/index.html">Home</a></li>
+            <li><a href="/hospital/staffreg.html">StaffReg</a></li>
+            <li><a href="/hospital/patientreg.html">PatientReg</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+
+          <a href="/hospital/form.html" class="action_btn">Get Started</a>
         </div>
-        <div class="col-lg-6">
-          <label for="dob">DOB</label>
-          <input type="text" /><br /><br />
-        </div>
-        <div class="col-lg-6">
-          <label for="lname">Lastname</label>
-          <input type="text" id="lname" name="lname" />
-        </div>
-        <div class="col-lg-6">
-          <label for="gender">Gender</label>
-          <input type="radio" id="female" name="female" value="female" />
-          <label for="female">female</label>
-          <input type="radio" id="male" name="male" value="male" />
-          <label for="male">male</label><br /><br />
-        </div>
-        <div class="col-lg-6">
-          <label for="email">Email</label>
-          <input type="email" placeholder="joy@gmail.com" required />
-        </div>
-        <div class="col-lg-6">
-          <label for="county">County</label>
-          <input type="combobox" /><br /><br />
-        </div>
-        <div class="col-lg-6">
-          <label for="telephone">Telephone</label>
-          <input type="text" /><br /><br />
-        </div>
-        <div class="col-lg-6">
-         <button type="save">save</button><br /><br />
-        </div>
-        <div class="col-lg-6">
-          <button type="exit">exit</button>
-        </div>
+      </header>
+
+      <div class="banner">
+        <h2>PATIENT REGISTRATION</h2>
+
+        <label for="fname">Fistname</label>
+        <input type="text" id="fname" name="fname" />
+
+        <label for="dob">DOB</label>
+        <input type="date" id="dBox" /><br /><br />
+
+        <label for="regno">Regnumber</label>
+        <input type="text" id="regno" name="regno" />
+
+        <select id="gender">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="joy@gmail.com" required />
+
+        <select name="county" id="county">
+          <option value="narok">Narok</option>
+          <option value="kisumu">Kisumu</option>
+          <option value="nairobi">Nairobi</option>
+          <option value="kiambu">Kiambu</option>
+        </select>
+
+        <label for="telephone">Telephone</label>
+        <input type="text" id="telephone" /><br /><br />
+
+        <button id="save">save</button>
+        <button id="del">Delete</button>
+        <button id="update">Update</button>
+        <button id="fetch">Fetch</button>
       </div>
-    </form>
+    </section>
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyBw-LBdjMgvxWFQScTqSEEMcHXNmdQh91g",
+        authDomain: "hospital-system-b6a60.firebaseapp.com",
+        projectId: "hospital-system-b6a60",
+        storageBucket: "hospital-system-b6a60.appspot.com",
+        messagingSenderId: "626119506670",
+        appId: "1:626119506670:web:22d462a6686f1de6e491ff",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+
+      import {
+        getDatabase,
+        ref,
+        get,
+        set,
+        child,
+        update,
+        remove,
+      } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-database.js";
+
+      const db = getDatabase();
+
+      //REFERENCE
+      var firstName = document.getElementById("fname");
+      var dateBox = document.getElementById("dBox");
+      var regNo = document.getElementById("regno");
+      var Gender = document.getElementById("gender");
+      var Email = document.getElementById("email");
+      var County = document.getElementById("county");
+      var Telephone = document.getElementById("telephone");
+
+      var Save = document.getElementById("save");
+      var Delete = document.getElementById("del");
+      var Update = document.getElementById("update");
+      var Fetch = document.getElementById("fetch");
+
+      //INSERT DATA FUNCTION
+      function InsertData() {
+        set(ref(db, "ThePatients/" + regNo.value), {
+          NameOfPat: firstName.value,
+          RegNo: regNo.value,
+          DOB: dateBox.value,
+          Gender: Gender.value,
+          Email: Email.value,
+          County: County.value,
+          Telephone: Telephone.value,
+        })
+          .then(() => {
+            alert("data saved successfully");
+          })
+          .catch((error) => {
+            alert("unsuccessful, error" + error);
+          });
+      }
+
+      //SELECT DATA FUNCTION
+      function SelectData() {
+        const dbref = ref(db);
+
+        get(child(dbref, "ThePatients/" + regNo.value))
+          .then((snapshot) => {
+            if (snapshot.exists()) {
+              firstName.value = snapshot.val().NameOfPat;
+              dateBox.value = snapshot.val().DOB;
+              Gender.value = snapshot.val().Gender;
+              Email.value = snapshot.val().Email;
+              County.value = snapshot.val().County;
+              Telephone.value = snapshot.val().Telephone;
+            } else {
+              alert("No data found");
+            }
+          })
+          .catch((error) => {
+            alert("unsuccessful, error" + error);
+          });
+      }
+
+      //UPDATE DATA FUNCTION
+      function UpdateData() {
+        update(ref(db, "ThePatients/" + regNo.value), {
+          NameOfPat: firstName.value,
+          RegNo: regNo.value,
+          DOB: dateBox.value,
+          Gender: Gender.value,
+          Email: Email.value,
+          County: County.value,
+          Telephone: Telephone.value,
+        })
+          .then(() => {
+            alert("data updated successfully");
+          })
+          .catch((error) => {
+            alert("unsuccessful, error" + error);
+          });
+      }
+
+      //DELETE DATA FUNCTION
+      function DeleteData() {
+        remove(ref(db, "ThePatients/" + regNo.value))
+          .then(() => {
+            alert("data deleted successfully");
+          })
+          .catch((error) => {
+            alert("unsuccessful, error" + error);
+          });
+      }
+
+      // Assign Events to Buttons
+      Save.addEventListener("click", InsertData);
+      Update.addEventListener("click", UpdateData);
+      Fetch.addEventListener("click", SelectData);
+      Delete.addEventListener("click", DeleteData)
+    </script>
   </body>
 </html>
