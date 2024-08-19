@@ -63,66 +63,7 @@ ul li{
    color: orange;
 }
 
-.d{
-   background-color: #f1fff6;
-}
-.patient{
-   padding: 50px;
-   height: 400px;
-   width: 800px;
-   margin-left: 100px;
-}
-.patient h2{
-   font-size: 30px;
-   margin: 40px 200px;
-}
-.patient label{
-   font-size: 20px;
-   padding-left: 10px;
-}
-.patient input{
-   font-size: 25px;
-   border-radius: 5px;
-}
-.patient ::placeholder{
-   font-size: 20px;
-}
-.patient button{
-   font-size: 15px;
-   text-transform: uppercase;
-   font-weight: bold;
-   margin: 10px;
-   padding: 5px;
-   border-radius: 5px;
-}
-.c{
-   background-color: #f1fff6;
-}
-.staff{
-   padding: 50px;
-   height: 400px;
-   width: 900px;
-}
-.staff h2{
-   font-size: 30px;
-   margin: 40px 200px;
-}
-.staff label{
-   font-size: 20px;
-   padding-left: 10px;
-}
-.staff input{
-   font-size: 25px;
-   border-radius: 5px;
-}
-.staff button{
-   font-size: 15px;
-   text-transform: uppercase;
-   font-weight: bold;
-   margin: 10px;
-   padding: 5px;
-   border-radius: 5px;
-}
+
 .a{
    background-color: #f1fff6;
 }
