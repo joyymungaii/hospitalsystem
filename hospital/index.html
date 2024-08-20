@@ -3,8 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
     <title>Hospital</title>
     <style>
       * {
@@ -14,27 +26,24 @@
         font-family: "Open Sans", sans-serif;
       }
 
-      body {
-        width: 100vw; 
-      }
-      
-      .one{
+      .one {
         height: 100vh;
+        width: 100%;
       }
-      
+
       /*whole header*/
       .navbar {
         display: flex;
         align-items: center;
-        gap: 200px;
-        width: 100vw;
+        gap: 180px;
+        width: 100%;
         height: 80px;
         background-color: #027179;
       }
 
       /*logo*/
-      .logo{
-        margin-left: 20px;
+      .logo {
+        padding-left: 20px;
         color: #000;
         font-size: 30px;
         font-weight: bold;
@@ -55,29 +64,10 @@
         gap: 50px;
         color: #000;
       }
-      
+
       .links a:hover {
         color: #000;
         text-decoration: underline;
-      }
-      /*GET STARTED BTN*/ 
-      .action_btn {
-        background-color: #00f2e1;
-        color: #000;
-        width: 100px;
-        height: 35px;
-        padding: 9px;
-        margin-left: 200px;
-        border: none;
-        border-radius: 20px;
-        font-size: 14px;
-        font-weight: bold;
-        cursor: pointer;
-        transition: scale 0.2 ease;
-      }
-
-      .action_btn:hover {
-        scale: 1.07;
       }
 
       .banner {
@@ -90,10 +80,9 @@
         background-size: cover;
         background-position: top;
         background-repeat: no-repeat;
-        
       }
-      .home{
-        margin-right: 850px;
+      .home {
+        padding-right: 850px;
       }
       .banner h1 {
         font-size: 50px;
@@ -101,8 +90,8 @@
         font-family: Poppins, Helvetica, Arial, sans-serif;
       }
       .banner p {
-        margin-top: 10px;
-        margin-bottom: 30px;
+        padding-top: 10px;
+        padding-bottom: 30px;
         color: #757575;
         font-size: 21px;
         font-family: Poppins, Helvetica, Arial, sans-serif;
@@ -118,21 +107,22 @@
         border-radius: 40px;
         transition: transform 0.1s;
       }
-      .banner button:hover{
+      .banner button:hover {
         transform: scale(1.1);
       }
-      .two{
+      .two {
         height: 45vh;
         background-color: #006270;
+        width: 100%;
       }
-      .motto{
+      .motto {
         display: flex;
         flex-direction: row;
         gap: 50px;
         justify-content: center;
       }
-      .motto i{
-        color: #00B2AD;
+      .motto i {
+        color: #00b2ad;
         font-size: 40px;
         margin-top: 15px;
         margin-left: 120px;
@@ -144,27 +134,28 @@
         align-items: center;
         justify-content: center;
       }
-      .tiny_motto{
+      .tiny_motto {
         border-radius: 10px;
         height: 190px;
         width: 310px;
         margin-top: 40px;
         background-color: #fff;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.164), 0 6px 20px 0 rgba(0, 0, 0, 0.062);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.164),
+          0 6px 20px 0 rgba(0, 0, 0, 0.062);
         transition: transform 0.1s;
       }
-      .tiny_motto:hover{
+      .tiny_motto:hover {
         transform: scale(1.05);
       }
-      .tiny_motto h3{
+      .tiny_motto h3 {
         text-align: center;
         padding-top: 10px;
         padding-left: 5px;
       }
-      .tiny_motto p{
+      .tiny_motto p {
         padding-left: 5px;
       }
-      .tiny_motto button{
+      .tiny_motto button {
         margin-top: 10px;
         margin-left: 75px;
         background-color: #009394;
@@ -175,21 +166,21 @@
         width: 150px;
         height: 35px;
       }
-      .three{
+      .three {
         height: 140vh;
-        background-color: #00B2AD;
+        background-color: #00b2ad;
       }
-      .three h2{
+      .three h2 {
         font-size: 50px;
         text-align: center;
         padding-top: 30px;
       }
-      .services{
+      .services {
         display: flex;
         align-items: center;
         justify-content: center;
       }
-      .service{
+      .service {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -201,36 +192,36 @@
         border-radius: 20px;
         transition: transform 500ms;
       }
-      .service:hover{
+      .service:hover {
         transform: scale(1.1);
       }
-      .service i{
+      .service i {
         font-size: 40px;
         padding-bottom: 20px;
       }
-      .service h3{
+      .service h3 {
         font-size: 30px;
         padding-top: 20px;
       }
-      .service p{
+      .service p {
         font-size: 16px;
         text-align: center;
         padding-bottom: 20px;
       }
-      .service a{
+      .service a {
         font-size: 18px;
       }
-      .service a i{
+      .service a i {
         font-size: 15px;
       }
-      .buttons{
+      .buttons {
         display: flex;
         align-items: center;
         justify-content: center;
         margin-top: 50px;
         gap: 20px;
       }
-      .appointment_btn{
+      .appointment_btn {
         width: 200px;
         height: 60px;
         background-color: #009394;
@@ -240,10 +231,10 @@
         font-size: 18px;
         transition: transform 0.1s;
       }
-      .appointment_btn:hover{
+      .appointment_btn:hover {
         transform: scale(1.1);
       }
-      .more_services_btn{
+      .more_services_btn {
         width: 200px;
         height: 60px;
         background-color: #fff;
@@ -253,55 +244,54 @@
         font-size: 18px;
         transition: transform 0.1s;
       }
-      .more_services_btn:hover{
+      .more_services_btn:hover {
         transform: scale(1.1);
       }
-      .four{
+      .four {
         background-color: #006270;
         height: 90vh;
         display: flex;
         flex-direction: column;
       }
-      .four h5{
+      .four h5 {
         font-size: 12px;
-        color: #00B2AD;
+        color: #00b2ad;
         text-transform: uppercase;
         padding: 30px 0 5px 80px;
       }
-      .four h2{
+      .four h2 {
         font-size: 40px;
         padding: 0 0 40px 80px;
       }
-      .blogs{
+      .blogs {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 30px;
       }
-      .blogs img{
+      .blogs img {
         width: 310px;
         height: 200px;
         background-size: cover;
         background-repeat: no-repeat;
         border-radius: 10px 0 0 0;
       }
-      .blogs span{
+      .blogs span {
         font-size: 12px;
         font-weight: lighter;
         text-align: right;
       }
-      .blogs h4{
+      .blogs h4 {
         font-size: 18px;
       }
-      .blogs p{
+      .blogs p {
         font-size: 14px;
-
       }
-      .blogs a{
-        color: #00B2AD;
+      .blogs a {
+        color: #00b2ad;
         text-align: center;
       }
-      .article{
+      .article {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -311,37 +301,42 @@
         background-color: #009394;
         border-radius: 10px 0 10px 0;
       }
-      .words{
+      .words {
         display: flex;
         flex-direction: column;
         gap: 5px;
       }
-      footer{
+      footer {
         height: 70vh;
         background-color: #0b8da1;
       }
-      .newsletter{
+      .newsletter {
         height: 35vh;
         display: flex;
         justify-content: center;
         padding-top: 30px;
         gap: 200px;
         align-items: center;
-        background-image: linear-gradient( to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/doc.jpg);
+        background-image: linear-gradient(
+            to left,
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url(/images/doc.jpg);
         background-size: cover;
         background-repeat: no-repeat;
       }
-      .newsletter h2{
+      .newsletter h2 {
         font-size: 28px;
       }
-      .newsletter input{
+      .newsletter input {
         height: 50px;
         width: 300px;
         border-radius: 30px;
         outline: none;
         border: none;
       }
-      .newsletter button{
+      .newsletter button {
         height: 38px;
         width: 90px;
         border: none;
@@ -354,51 +349,51 @@
         gap: 4px;
         padding-right: 50px;
       }
-      .about_us h2{
+      .about_us h2 {
         font-size: 20px;
       }
-      .about_us p{
+      .about_us p {
         font-size: 14px;
       }
-      .about_us i{
+      .about_us i {
         margin-right: 5px;
         font-size: 25px;
       }
-      .pages{
+      .pages {
         display: flex;
         flex-direction: column;
         gap: 5px;
         padding-right: 20px;
       }
-      .pages h2{
+      .pages h2 {
         font-size: 18px;
       }
-      .pages a{
+      .pages a {
         font-size: 14px;
       }
-      .directions{
+      .directions {
         display: flex;
         flex-direction: column;
         gap: 5px;
       }
-      .directions span{
+      .directions span {
         color: #93a267;
       }
-      .directions h2{
+      .directions h2 {
         font-size: 18px;
       }
-      .directions p{
+      .directions p {
         font-size: 14px;
       }
-      .directions a{
+      .directions a {
         text-transform: uppercase;
         font-size: 15px;
         text-decoration: underline;
       }
-      .directions a:hover{
+      .directions a:hover {
         color: #93a267;
       }
-      .main{
+      .main {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -406,14 +401,14 @@
         margin-top: 20px;
         height: 25vh;
       }
-      .copyright{
+      .copyright {
         background-color: #000;
         height: 7vh;
         margin-top: 22px;
         display: flex;
         align-items: center;
       }
-      .copyright p{
+      .copyright p {
         color: #fff;
         padding-left: 50px;
       }
@@ -423,8 +418,10 @@
     <section class="one">
       <header>
         <div class="navbar">
-          <div class="logo"><a href="/hospital/index.html">Care Embrace Medical</a></div>
-  
+          <div class="logo">
+            <a href="/hospital/index.html">Care Embrace Medical</a>
+          </div>
+
           <ul class="links">
             <li><a href="/hospital/index.html">Home</a></li>
             <li><a href="/hospital/staffreg.html">StaffReg</a></li>
@@ -432,20 +429,34 @@
             <li><a href="/hospital/service.html">Services</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
-  
-          <a href="/hospital/form.html" class="action_btn">Get Started</a>
+
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+           >
+              Get Started
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/hospital/login.html">Log In</a></li>
+              <li><a class="dropdown-item" href="/hospital/signup.html">Register</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Log out</a></li>
+            </ul>
+          </div>
         </div>
       </header>
       <div class="banner">
         <div class="home">
           <h1>
-            Best Medical & 
-            <br>Healthcare Service 
-            <br>For Your Family
+            Best Medical &
+            <br />Healthcare Service <br />For Your Family
           </h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing el 
-            <br>eiusmod tempor incididunt ut labortju.
+            Lorem ipsum dolor sit amet, consectetur adipiscing el
+            <br />eiusmod tempor incididunt ut labortju.
           </p>
           <button>Contact us</button>
         </div>
@@ -479,46 +490,57 @@
         <div class="service">
           <i class="fa-solid fa-tooth"></i>
           <h3>Dental Care</h3>
-          <p>Lorem ipsum dolor sit amet consecte
-             adipisicing elit Atque, odit.</p>
-            <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+          <p>
+            Lorem ipsum dolor sit amet consecte adipisicing elit Atque, odit.
+          </p>
+          <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
         </div>
         <div class="service">
           <i class="fa-solid fa-eye"></i>
           <h3>Eye Care</h3>
-          <p>Lorem ipsum dolor sit amet consecte
-            adipisicing elit. Eligendi, nihil.</p>
-            <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+          <p>
+            Lorem ipsum dolor sit amet consecte adipisicing elit. Eligendi,
+            nihil.
+          </p>
+          <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
         </div>
         <div class="service">
           <i class="fa-solid fa-stethoscope"></i>
           <h3>General</h3>
-          <p>Lorem ipsum dolor sit amet consecte
-            adipisicing elit. Eligendi, nihil.</p>
-            <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+          <p>
+            Lorem ipsum dolor sit amet consecte adipisicing elit. Eligendi,
+            nihil.
+          </p>
+          <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="services">
         <div class="service">
           <i class="fa-solid fa-apple-whole"></i>
           <h3>Nutrition</h3>
-          <p>Lorem ipsum dolor sit amet consecte
-            adipisicing elit. Eligendi, nihil.</p>
-            <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+          <p>
+            Lorem ipsum dolor sit amet consecte adipisicing elit. Eligendi,
+            nihil.
+          </p>
+          <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
         </div>
         <div class="service">
           <i class="fa-solid fa-syringe"></i>
           <h3>Vaccination</h3>
-          <p>Lorem ipsum dolor sit amet consecte
-            adipisicing elit. Eligendi, nihil.</p>
-            <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+          <p>
+            Lorem ipsum dolor sit amet consecte adipisicing elit. Eligendi,
+            nihil.
+          </p>
+          <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
         </div>
         <div class="service">
           <i class="fa-solid fa-baby-carriage"></i>
           <h3>Pediatrics</h3>
-          <p>Lorem ipsum dolor sit amet consecte
-            adipisicing elit. Eligendi, nihil.</p>
-            <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+          <p>
+            Lorem ipsum dolor sit amet consecte adipisicing elit. Eligendi,
+            nihil.
+          </p>
+          <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="buttons">
@@ -531,29 +553,35 @@
       <h2>Blogs and Articles</h2>
       <div class="blogs">
         <div class="article">
-          <img src="/images/d8.png" alt="">
+          <img src="/images/d8.png" alt="" />
           <div class="words">
             <span> - 29th May 2024</span>
             <h4>Lorem ipsum dolor sit.</h4>
-            <p>Lorem ipsum dolor sit amet <br>consectetur adipisicing elit.</p>
+            <p>
+              Lorem ipsum dolor sit amet <br />consectetur adipisicing elit.
+            </p>
             <a href="">Read more <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="article">
-          <img src="/images/d7.png" alt="">
+          <img src="/images/d7.png" alt="" />
           <div class="words">
             <span> - 29th May 2024</span>
             <h4>Lorem ipsum dolor sit.</h4>
-            <p>Lorem ipsum dolor sit amet <br>consectetur adipisicing elit.</p>
+            <p>
+              Lorem ipsum dolor sit amet <br />consectetur adipisicing elit.
+            </p>
             <a href="">Read more <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="article">
-          <img src="/images/d8.png" alt="">
+          <img src="/images/d8.png" alt="" />
           <div class="words">
             <span> - 29th May 2024</span>
             <h4>Lorem ipsum dolor sit.</h4>
-            <p>Lorem ipsum dolor sit amet <br>consectetur adipisicing elit.</p>
+            <p>
+              Lorem ipsum dolor sit amet <br />consectetur adipisicing elit.
+            </p>
             <a href="">Read more <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
@@ -563,25 +591,29 @@
       <div class="newsletter">
         <div>
           <h2>Subscribe to Our NewsLetter</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-             Labore, sapiente. Lorem ipsum dolor sit </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+            Labore, sapiente. Lorem ipsum dolor sit
+          </p>
         </div>
         <div>
-          <input type="text" name="Your email"> <button>Subscribe</button>
+          <input type="text" name="Your email" /> <button>Subscribe</button>
         </div>
       </div>
       <div class="main">
         <div class="about_us">
           <h2>Care Embrace Medical</h2>
-          <p>Lorem ipsum dolor sit amet consectetur <br>
-            adipisicing elit. Molestias nostrum deleniti <br>
-            sequi sit odit facilis ducimus voluptas. <br>
-            Exercitationem, blanditiis voluptates?</p>
-            <div>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-twitter"></i>
-              <i class="fa-brands fa-facebook-f"></i>
-            </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur <br />
+            adipisicing elit. Molestias nostrum deleniti <br />
+            sequi sit odit facilis ducimus voluptas. <br />
+            Exercitationem, blanditiis voluptates?
+          </p>
+          <div>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
         </div>
         <div class="pages">
           <h2>Other pages</h2>
@@ -602,5 +634,11 @@
         <p>© 2024 Care Embrace Medical. All rights reserved.</p>
       </div>
     </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
