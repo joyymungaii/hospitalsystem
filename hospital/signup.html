@@ -9,182 +9,46 @@
     <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
 
-    <link rel="stylesheet" href="loginn.css">
+    <link rel="stylesheet" href="content.css">
+    <script type="module" src="firebaseauth.js"></script>
 
-    <style>
-        *{
-    margin: 0;
-    padding: 0;
-    font-family: "poppins", sans-serif;
-}
-
-body{
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: url("/images/background3.jpg") no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-}
-
-.box{
-    width: 450px;
-    height: 520px;
-    border: 2px solid hwb(143 15% 69%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    backdrop-filter: blur(15px);
-    background: transparent;
-}
-
-h2{
-    font-size: 2em;
-    color: #faf5e3;
-    text-align: center;
-}
-
-.inputbox{
-    position: relative;
-    margin: 30px 0;
-    width: 300px;
-    border-bottom: 2px solid #faf5e3;
-}
-
-.inputbox label{
-    position: absolute;
-    top: 50%;
-    left: 40px;
-    transform: translate(-50%);
-    color: #faf5e3;
-    font-size: 1em;
-    pointer-events: none;
-    transition: 0.5s;
-}
-
-input:focus~label{
-    top: -5px;
-}
-
-.inputbox input{
-    width: 100%;
-    height: 50px;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 1em;
-    padding: 0 35px 0 5px;
-    color: #fff;
-}
-
-.inputbox ion-icon{
-    position: absolute;
-    right: 8px;
-    color: #faf5e3;
-    font-size: 1.2em;
-    top: 20px;
-}
-
-button{
-    width: 100%;
-    height: 40px;
-    background-color: #faf5e3;
-    border-radius: 50px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size: 1.3em;
-    font-weight: 700;
-}
-
-.forget{
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 0 15px;
-    font-size: 0.9em;
-    color: #fff;
-}
-
-.forget label:nth-child(2){
-    order: 1;
-}
-
-.forget label{
-    display: flex;
-    align-items: center;
-}
-
-.forget label input[ type="checkbox"]{
-    margin-right: 6px;
-}
-
-.forget label a{
-    color: #fff;
-    text-decoration: none;
-}
-
-.forget  label a:hover{
-    text-decoration: underline;
-}
-
-.register{
-    font-size: 0.9em;
-    color: #fff;
-    text-align: center;
-    margin: 20px 0 15px;
-}
-
-.register p a{
-    text-decoration: none;
-    color: #fff;
-    font-weight: 800;
-}
-
-.register p a:hover{
-    text-decoration: underline;
-    transition: 1s;
-}
-    </style>
 </head>
 <body>
     
-    <div class="box">
+    <div class="box" id="signup" style="display: none;">
 
         <form action="">
             <h2>Register</h2>
-
+            <div id="signUpMessage" class="messageDiv" style="display:none;"></div>
             <div class="inputbox">
                 <ion-icon name="mail-outline" ></ion-icon>
-                <input  type="name" name="" id="" required>
-                <label for="">Username:</label>
+                <input  type="text"  id="fName" name="" required>
+                <label for="">First Name:</label>
             </div>
 
             <div class="inputbox">
                 <ion-icon name="mail-outline" ></ion-icon>
-                <input  type="email" name="" id="" required>
+                <input  type="text"  id="lName" name="" required>
+                <label for="">Last Name:</label>
+            </div>
+
+            <div class="inputbox">
+                <ion-icon name="mail-outline" ></ion-icon>
+                <input  type="email"  id="rEmail" name="email" required>
                 <label for="">Email:</label>
             </div>
 
             <div class="inputbox">
                 <ion-icon name="lock-closed-outline" ></ion-icon>
-                <input  type="password" name="" id="" required>
-                <label for="">New Password:</label>
+                <input  type="password"  id="rPassword" name="password" required>
+                <label for="">Password:</label>
             </div>
 
-            <div class="inputbox">
-                <ion-icon name="mail-outline" ></ion-icon>
-                <input  type="name" name="" id="" required>
-                <label for="">Specialty:</label>
-            </div>
 
             <div class="forget">
 
                 <label for="">
-                    <input type="checkbox" name="" id="">Remember me
+                    <input type="checkbox"  id="">Remember me
                 </label for="register">
                     
                 <label for="">
@@ -192,11 +56,71 @@ button{
                 </label>
             </div>
 
-            <button> <a href="/hospital/nav.html">Register</a> </button>
-
+            <button class="btn" id="submitSignUp"> Register </button>
             
         </form>
 
+        <div class="links">
+            <p>Already Have Account ?</p>
+            <button id="signInButton">Log In</button>
+          </div>
+
     </div>
+
+
+    <div class="container" id="signIn">
+
+        <form method="post" action="">
+            <h2>Login</h2>
+            <div id="signInMessage" class="messageDiv" style="display:none;"></div>
+
+            <div class="inputbox">
+                <ion-icon name="mail-outline" ></ion-icon>
+                <input  type="email"  id="email" required>
+                <label for="email">Email:</label>
+            </div>
+
+            <div class="inputbox">
+                <ion-icon name="lock-closed-outline" ></ion-icon>
+                <input  type="password" id="password" required>
+                <label for="password">Password:</label>
+            </div>
+
+            <div class="forget">
+
+                <label for="">
+                    <input type="checkbox"  id="">Remember me
+                </label for="register">
+                    
+                <label for="">
+                    <a href="#">Forget Password</a> 
+                </label>
+            </div>
+
+            <button class="btn" id="submitSignIn"> Log In </button>
+
+            <div class="register">
+                <p>Don't have an account?</p>
+                <button id="signUpButton"> Register </button>
+            </div>
+        </form>
+
+    </div>
+
+    <script>
+        const signUpButton=document.getElementById('signUpButton');
+        const signInButton=document.getElementById('signInButton');
+        const signInForm=document.getElementById('signIn');
+        const signUpForm=document.getElementById('signup');
+
+        signUpButton.addEventListener('click',function(){
+            signInForm.style.display="none";
+            signUpForm.style.display="block";
+        })
+        signInButton.addEventListener('click', function(){
+            signInForm.style.display="block";
+            signUpForm.style.display="none";
+        })
+    </script>
 </body>
 </html>
