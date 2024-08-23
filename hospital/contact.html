@@ -23,7 +23,9 @@
         justify-content: center;
         align-items: center;
         min-height: 100vh;
-        background-color: #1fbcd4;
+        background: url(/images/pic2.avif);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .contact h2{
         font-size: 40px;
@@ -289,27 +291,17 @@
             <input type="hidden" name="access_key" value="71e6e9ce-cec3-40db-8cbc-29c4449d9df5">
             <div class="input-box">
                 <div class="input-field field">
-                    <input type="text" placeholder="Full Name" id="name" autocomplete="off" class="item">
+                    <input type="text" placeholder="Full Name" id="name" name="name" autocomplete="off" class="item">
                     <div class="error-txt">Can't be Blank</div>
                 </div>
                 <div class="input-field field">
-                    <input type="text" placeholder="Email Address" id="email" autocomplete="off" class="item">
-                    <div class="error-txt">Can't be Blank</div>
-                </div>
-            </div>
-            <div class="input-box">
-                <div class="input-field field">
-                    <input type="text" placeholder="Phone Number" id="phone" autocomplete="off" class="item">
-                    <div class="error-txt">Can't be Blank</div>
-                </div>
-                <div class="input-field field">
-                    <input type="text" placeholder="Subject" id="subject" autocomplete="off" class="item">
+                    <input type="text" placeholder="Email Address" id="email" name="email" autocomplete="off" class="item">
                     <div class="error-txt">Can't be Blank</div>
                 </div>
             </div>
 
             <div class="textarea-field field">
-                <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" class="item" autocomplete="off"></textarea>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"  name="message" class="item" autocomplete="off"></textarea>
                 <div class="error-txt">Can't be Blank</div>
             </div>
 
@@ -366,7 +358,5 @@
       </div>
     </footer>
 
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="contact.js"></script>
   </body>
 </html>

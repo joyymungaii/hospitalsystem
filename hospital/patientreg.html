@@ -65,25 +65,6 @@
         color: #000;
         text-decoration: underline;
       }
-      /*GET STARTED BTN*/
-      .action_btn {
-        background-color: #00f2e1;
-        color: #000;
-        width: 100px;
-        height: 35px;
-        padding: 9px;
-        margin-left: 200px;
-        border: none;
-        border-radius: 20px;
-        font-size: 14px;
-        font-weight: bold;
-        cursor: pointer;
-        transition: scale 0.2 ease;
-      }
-
-      .action_btn:hover {
-        scale: 1.07;
-      }
 
       .banner {
         height: 88vh;
@@ -132,7 +113,31 @@
             <li><a href="#">Contact</a></li>
           </ul>
 
-          <a href="/hospital/form.html" class="action_btn">Get Started</a>
+          <div class="dropdown">
+            <button
+            style="background-color: #8bfff7b0; color: #000; border: none; margin-right: 10px;"
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Get Started
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="/hospital/signup.html">Log In</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/hospital/signup.html"
+                  >Register</a
+                >
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <button class="dropdown-item" id="logout">Log out</button>
+              </li>
+            </ul>
+          </div>
         </div>
       </header>
 
